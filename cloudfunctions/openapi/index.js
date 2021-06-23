@@ -1,7 +1,9 @@
 // 云函数入口文件
 const cloud = require('wx-server-sdk')
 
-cloud.init()
+cloud.init({
+  env:cloud.DYNAMIC_CURRENT_ENV,
+})
 
 // 云函数入口函数
 exports.main = async (event, context) => {
@@ -43,11 +45,20 @@ async function sendSubscribeMessage(event) {
     page: 'pages/openapi/openapi',
     // 此处字段应修改为所申请模板所要求的字段
     data: {
-      thing1: {
-        value: '咖啡',
+      date3: {
+        value: '2021/6/23',
       },
-      time3: {
-        value: '2020-01-01 00:00',
+      thing4: {
+        value: '开会',
+      },
+      thing5:{
+        value: '卡片当天有效，过期无效'
+      },
+      thing2:{
+        value: '村落'
+      },
+      name1:{
+        value: 'SG'
       },
     }
   })
