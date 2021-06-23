@@ -3,6 +3,28 @@ const app = getApp()
 
 Page({
   data: {
+    list: [{
+      "text": "越剧",
+      "iconPath": "/../../images/toolbar/tabbar_icon_theatre_default.png",
+      "selectedIconPath": "/../../images/toolbar/tabbar_icon_theatre_active.png",
+        dot: true
+      },
+      {
+        "text": "越地小吃",
+        "iconPath": "/../../images/toolbar/tabbar_icon_food_default.png",
+        "selectedIconPath": "/../../images/toolbar/tabbar_icon_food_active.png",
+          dot: true
+      },
+      {
+        "text": "设置",
+        "iconPath": "/../../images/toolbar/tabbar_icon_setting_default.png",
+        "selectedIconPath": "/../../images/toolbar/tabbar_icon_setting_active.png",
+          badge: 'New'
+      }
+    ],
+    tabChange(e) {
+        console.log('tab change', e)
+    },
     avatarUrl: './user-unlogin.png',
     userInfo: {},
     hasUserInfo: false,

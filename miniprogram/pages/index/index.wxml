@@ -1,6 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-
   <!-- 用户 openid -->
   <view class="userinfo">
     <block wx:if="{{canIUseOpenData}}" class="userinfo-opendata">
@@ -33,6 +32,12 @@
     </view>
   </view>
 
+  <!-- 对话框 --> 
+  <!--
+  <mp-dialog title="对话框测试" show="{{true}}" bindbuttontap="tapDialogButton" buttons="{{[{text: '取消'}, {text: '确认'}]}}">
+    <view>这是一个对话框</view>
+</mp-dialog>
+-->
 
   <!-- 上传图片 -->
   <view class="uploader">
@@ -74,4 +79,7 @@
   </view>
 
 
+</view>
+<view class="page">
+    <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar>
 </view>

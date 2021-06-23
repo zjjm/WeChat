@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "mp-dialog": "weui-miniprogram/dialog/dialog",
+    "mp-tabbar": "weui-miniprogram/tabbar/tabbar"
+  },
+  "navigationBarTitleText": "UI组件库"
 }
