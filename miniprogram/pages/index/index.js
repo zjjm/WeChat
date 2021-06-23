@@ -5,21 +5,36 @@ Page({
   data: {
     list: [{
       "text": "越剧",
+      "iconPath": "https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/toolbar/tabbar_icon_theatre_default.png",
+      "selectedIconPath": "https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/toolbar/tabbar_icon_theatre_active.png",
+        dot: true
+      /*
       "iconPath": "/../../images/toolbar/tabbar_icon_theatre_default.png",
       "selectedIconPath": "/../../images/toolbar/tabbar_icon_theatre_active.png",
         dot: true
+        */
       },
       {
         "text": "越地小吃",
+        "iconPath": "https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/toolbar/tabbar_icon_food_default.png",
+        "selectedIconPath": "https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/toolbar/tabbar_icon_food_active.png",
+          dot: true
+        /*
         "iconPath": "/../../images/toolbar/tabbar_icon_food_default.png",
         "selectedIconPath": "/../../images/toolbar/tabbar_icon_food_active.png",
           dot: true
+          */
       },
       {
         "text": "设置",
+        "iconPath": "https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/toolbar/tabbar_icon_setting_default.png",
+        "selectedIconPath": "https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/toolbar/tabbar_icon_setting_active.png",
+          dot: false
+        /*
         "iconPath": "/../../images/toolbar/tabbar_icon_setting_default.png",
         "selectedIconPath": "/../../images/toolbar/tabbar_icon_setting_active.png",
           badge: 'New'
+          */
       }
     ],
     tabChange(e) {
