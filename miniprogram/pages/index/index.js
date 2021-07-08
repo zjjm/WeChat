@@ -3,10 +3,14 @@ const app = getApp()
 
 Page({
   data: {
+    //搜索框
+    inputShowed: false,
+    inputVal: "",
+    //导航栏
     list: [{
       "text": "越剧",
-      "iconPath": "https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/toolbar/tabbar_icon_theatre_default.png",
-      "selectedIconPath": "https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/toolbar/tabbar_icon_theatre_active.png",
+      "iconPath": "/images/toolbar/tabbar_icon_theatre_default.png",
+      "selectedIconPath": "/images/toolbar/tabbar_icon_theatre_active.png",
         dot: true
       /*
       "iconPath": "/../../images/toolbar/tabbar_icon_theatre_default.png",
@@ -16,8 +20,8 @@ Page({
       },
       {
         "text": "越地小吃",
-        "iconPath": "https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/toolbar/tabbar_icon_food_default.png",
-        "selectedIconPath": "https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/toolbar/tabbar_icon_food_active.png",
+        "iconPath": "/images/toolbar/tabbar_icon_food_default.png",
+        "selectedIconPath": "/images/toolbar/tabbar_icon_food_active.png",
           dot: true
         /*
         "iconPath": "/../../images/toolbar/tabbar_icon_food_default.png",
@@ -27,8 +31,8 @@ Page({
       },
       {
         "text": "设置",
-        "iconPath": "https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/toolbar/tabbar_icon_setting_default.png",
-        "selectedIconPath": "https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/toolbar/tabbar_icon_setting_active.png",
+        "iconPath": "/images/toolbar/tabbar_icon_setting_default.png",
+        "selectedIconPath": "/images/toolbar/tabbar_icon_setting_active.png",
           dot: false
         /*
         "iconPath": "/../../images/toolbar/tabbar_icon_setting_default.png",
@@ -38,7 +42,13 @@ Page({
       }
     ],
     tabChange(e) {
-        console.log('tab change', e)
+      console.log('tab change', e)
+      this.updateActive(e.detail)      //实现tabbar的跳转 
+      wx.switchTab({
+        //这个url必须以/根路径开头 
+        
+        url:this.data.list[e.detail].pagePath
+      })
     },
     avatarUrl: './user-unlogin.png',
     userInfo: {},
@@ -51,6 +61,9 @@ Page({
   },
 
   onLoad: function() {
+    this.setData({
+      search: this.search.bind(this)
+    })
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',
@@ -62,6 +75,17 @@ Page({
         canIUseGetUserProfile: true,
       })
     }
+  },
+  //搜索
+  search: function (value) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve([{text: '搜索结果', value: 1}, {text: '搜索结果2', value: 2}])
+          }, 200)
+      })
+  },
+  selectResult: function (e) {
+      console.log('select result', e.detail)
   },
 
   getUserProfile() {
