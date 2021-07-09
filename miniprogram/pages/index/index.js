@@ -1,55 +1,21 @@
 //index.js
 const app = getApp()
-
-Page({
+ 
+Component({
+  pageLifetimes: {
+    show() {
+      if (typeof this.getTabBar === 'function' &&
+        this.getTabBar()) {
+        this.getTabBar().setData({
+          selected: 0
+        })
+      }
+    }
+  },
   data: {
     //搜索框
     inputShowed: false,
     inputVal: "",
-    //导航栏
-    list: [{
-      "text": "越剧",
-      "iconPath": "/images/toolbar/tabbar_icon_theatre_default.png",
-      "selectedIconPath": "/images/toolbar/tabbar_icon_theatre_active.png",
-        dot: true
-      /*
-      "iconPath": "/../../images/toolbar/tabbar_icon_theatre_default.png",
-      "selectedIconPath": "/../../images/toolbar/tabbar_icon_theatre_active.png",
-        dot: true
-        */
-      },
-      {
-        "text": "越地小吃",
-        "iconPath": "/images/toolbar/tabbar_icon_food_default.png",
-        "selectedIconPath": "/images/toolbar/tabbar_icon_food_active.png",
-          dot: true
-        /*
-        "iconPath": "/../../images/toolbar/tabbar_icon_food_default.png",
-        "selectedIconPath": "/../../images/toolbar/tabbar_icon_food_active.png",
-          dot: true
-          */
-      },
-      {
-        "text": "设置",
-        "iconPath": "/images/toolbar/tabbar_icon_setting_default.png",
-        "selectedIconPath": "/images/toolbar/tabbar_icon_setting_active.png",
-          dot: false
-        /*
-        "iconPath": "/../../images/toolbar/tabbar_icon_setting_default.png",
-        "selectedIconPath": "/../../images/toolbar/tabbar_icon_setting_active.png",
-          badge: 'New'
-          */
-      }
-    ],
-    tabChange(e) {
-      console.log('tab change', e)
-      this.updateActive(e.detail)      //实现tabbar的跳转 
-      wx.switchTab({
-        //这个url必须以/根路径开头 
-        
-        url:this.data.list[e.detail].pagePath
-      })
-    },
     avatarUrl: './user-unlogin.png',
     userInfo: {},
     hasUserInfo: false,
@@ -59,127 +25,151 @@ Page({
     canIUseGetUserProfile: false,
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') // 如需尝试获取用户信息可改为false
   },
-
-  onLoad: function() {
-    this.setData({
-      search: this.search.bind(this)
-    })
-    if (!wx.cloud) {
-      wx.redirectTo({
-        url: '../chooseLib/chooseLib',
-      })
-      return
-    }
-    if (wx.getUserProfile) {
-      this.setData({
-        canIUseGetUserProfile: true,
-      })
-    }
-  },
-  //搜索
-  search: function (value) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve([{text: '搜索结果', value: 1}, {text: '搜索结果2', value: 2}])
-          }, 200)
-      })
-  },
-  selectResult: function (e) {
-      console.log('select result', e.detail)
-  },
-
-  getUserProfile() {
-    // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
-    wx.getUserProfile({
-      desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-      success: (res) => {
+  methods: {
+      /**
+       * 生命周期函数--监听页面加载
+       */
+      onLoad: function() {
         this.setData({
-          avatarUrl: res.userInfo.avatarUrl,
-          userInfo: res.userInfo,
-          hasUserInfo: true,
+          search: this.search.bind(this)
         })
-      }
+        if (!wx.cloud) {
+          wx.redirectTo({
+            url: '../chooseLib/chooseLib',
+          })
+          return
+        }
+        if (wx.getUserProfile) {
+          this.setData({
+            canIUseGetUserProfile: true,
+          })
+        }
+      },
+//搜索
+search: function (value) {
+  return new Promise((resolve, reject) => {
+      setTimeout(() => {
+          resolve([{text: '搜索结果', value: 1}, {text: '搜索结果2', value: 2}])
+        }, 200)
     })
-  },
+},
+selectResult: function (e) {
+    console.log('select result', e.detail)
+},
 
-  onGetUserInfo: function(e) {
-    if (!this.data.logged && e.detail.userInfo) {
+getUserProfile() {
+  // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
+  wx.getUserProfile({
+    desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+    success: (res) => {
       this.setData({
-        logged: true,
-        avatarUrl: e.detail.userInfo.avatarUrl,
-        userInfo: e.detail.userInfo,
+        avatarUrl: res.userInfo.avatarUrl,
+        userInfo: res.userInfo,
         hasUserInfo: true,
       })
     }
-  },
+  })
+},
 
-  onGetOpenid: function() {
-    // 调用云函数
-    wx.cloud.callFunction({
-      name: 'login',
-      data: {},
-      success: res => {
-        console.log('[云函数] [login] user openid: ', res.result.openid)
-        app.globalData.openid = res.result.openid
-        wx.navigateTo({
-          url: '../userConsole/userConsole',
-        })
-      },
-      fail: err => {
-        console.error('[云函数] [login] 调用失败', err)
-        wx.navigateTo({
-          url: '../deployFunctions/deployFunctions',
-        })
-      }
+onGetUserInfo: function(e) {
+  if (!this.data.logged && e.detail.userInfo) {
+    this.setData({
+      logged: true,
+      avatarUrl: e.detail.userInfo.avatarUrl,
+      userInfo: e.detail.userInfo,
+      hasUserInfo: true,
     })
-  },
+  }
+},
 
-  // 上传图片
-  doUpload: function () {
-    // 选择图片
-    wx.chooseImage({
-      count: 1,
-      sizeType: ['compressed'],
-      sourceType: ['album', 'camera'],
-      success: function (res) {
-        wx.showLoading({
-          title: '上传中',
-        })
+onGetOpenid: function() {
+  // 调用云函数
+  wx.cloud.callFunction({
+    name: 'login',
+    data: {},
+    success: res => {
+      console.log('[云函数] [login] user openid: ', res.result.openid)
+      app.globalData.openid = res.result.openid
+      wx.navigateTo({
+        url: '../userConsole/userConsole',
+      })
+    },
+    fail: err => {
+      console.error('[云函数] [login] 调用失败', err)
+      wx.navigateTo({
+        url: '../deployFunctions/deployFunctions',
+      })
+    }
+  })
+},
 
-        const filePath = res.tempFilePaths[0]
-        
-        // 上传图片
-        const cloudPath = `my-image${filePath.match(/\.[^.]+?$/)[0]}`
-        wx.cloud.uploadFile({
-          cloudPath,
-          filePath,
-          success: res => {
-            console.log('[上传文件] 成功：', res)
+// 上传图片
+doUpload: function () {
+  // 选择图片
+  wx.chooseImage({
+    count: 1,
+    sizeType: ['compressed'],
+    sourceType: ['album', 'camera'],
+    success: function (res) {
+      wx.showLoading({
+        title: '上传中',
+      })
 
-            app.globalData.fileID = res.fileID
-            app.globalData.cloudPath = cloudPath
-            app.globalData.imagePath = filePath
-            
-            wx.navigateTo({
-              url: '../storageConsole/storageConsole'
-            })
-          },
-          fail: e => {
-            console.error('[上传文件] 失败：', e)
-            wx.showToast({
-              icon: 'none',
-              title: '上传失败',
-            })
-          },
-          complete: () => {
-            wx.hideLoading()
-          }
-        })
+      const filePath = res.tempFilePaths[0]
+      
+      // 上传图片
+      const cloudPath = `my-image${filePath.match(/\.[^.]+?$/)[0]}`
+      wx.cloud.uploadFile({
+        cloudPath,
+        filePath,
+        success: res => {
+          console.log('[上传文件] 成功：', res)
+
+          app.globalData.fileID = res.fileID
+          app.globalData.cloudPath = cloudPath
+          app.globalData.imagePath = filePath
+          
+          wx.navigateTo({
+            url: '../storageConsole/storageConsole'
+          })
+        },
+        fail: e => {
+          console.error('[上传文件] 失败：', e)
+          wx.showToast({
+            icon: 'none',
+            title: '上传失败',
+          })
+        },
+        complete: () => {
+          wx.hideLoading()
+        }
+      })
+    },
+    fail: e => {
+      console.error(e)
+    }
+  })
+},
+      /**
+       * 生命周期函数--监听页面初次渲染完成
+       */
+      onReady:function() {
+
       },
-      fail: e => {
-        console.error(e)
-      }
-    })
-  },
 
+      /**
+       * 生命周期函数--监听页面显示
+       */
+      onShow:function() {
+
+      },
+
+      /**
+       * 生命周期函数--监听页面隐藏
+       */
+      onHide:function() {
+
+      },
+
+  }
 })

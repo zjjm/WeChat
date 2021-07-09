@@ -3,7 +3,14 @@ const app = getApp()
 Page({
   data: {
   },
-
+  /*
+  show() {
+    if(typeof this.getTabBar === 'function' && this.getTabBar()) {
+        this.getTabBar().setDat({
+          activeIndex:1
+        })
+      }
+  },*/
   onLoad: function (options) {
     if (app.globalData.openid) {
       this.setData({
@@ -15,4 +22,16 @@ Page({
     console.log('https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/realtime.html')
     console.groupEnd()
   },
+})
+Component({
+  pageLifetimes: {
+    show() {
+      if (typeof this.getTabBar === 'function' &&
+        this.getTabBar()) {
+        this.getTabBar().setData({
+          selected: 1
+        })
+      }
+    }
+  }
 })
