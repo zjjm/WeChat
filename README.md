@@ -3,11 +3,11 @@
 
 
 
-![乡村振兴: 小程序 (shields.io)](https://img.shields.io/badge/乡村振兴-小程序-brightgreen)![node: v14.15 (shields.io)](https://img.shields.io/badge/node-v14.15-yellow)
+![乡村振兴: 小程序 (乡村振兴: 小程序)](https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/markdown/乡村振兴-小程序-brightgreen.svg)![node: v14.15 (node: v14.15)](https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/markdown/Node-v14.15-yellow.svg)
 
 
 
-<img src="\miniprogram\images\markdown\banner.png" alt="banner" style="zoom:75%;" />
+<img src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/markdown/banner.png" alt="banner" style="zoom:75%;" />
 
 
 
@@ -20,4 +20,3 @@
 ## 参考文档
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
-
