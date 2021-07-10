@@ -1,0 +1,28 @@
+/* pages/databaseGuide/databaseGuide.wxss */
+/*
+@import "../../style/guide.wxss";
+
+.guide .counter {
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}*/
+page {
+  /*背景渐变*/
+  background: -webkit-linear-gradient(top,#ECC6BA,#FFFFFF,#ECC6BA);
+}
+
+.container {
+  width: 100%;
+  height: 600rpx;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+image{
+  position: absolute;
+  width: 100%;
+  height: 1000rpx;
+}
