@@ -1,10 +1,21 @@
-# 云开发 quickstart
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
+# 乡村振兴Demo
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
+
+
+![乡村振兴: 小程序 (shields.io)](https://img.shields.io/badge/乡村振兴-小程序-brightgreen)![node: v14.15 (shields.io)](https://img.shields.io/badge/node-v14.15-yellow)
+
+
+
+<img src="H:\WX\miniprogram\images\markdown\banner.png" alt="banner" style="zoom:75%;" />
+
+
+
+|  项目 | 需求  |完成度 |
+| :-----:| :----: | :----: |
+| 越唱吧 | 完成背景，需要修改搜索样式 |20%|
+| 越有味 | 完成背景，需要修改搜索样式 |20%|
+| 预约   | 暂未开始                |0%|
 
 ## 参考文档
 
