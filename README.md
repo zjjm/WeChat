@@ -7,7 +7,7 @@
 
 
 
-<img src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/markdown/banner.png" alt="banner" style="zoom:75%;" />
+<img src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/markdown/banner.png" alt="banner" style="zoom:50%;" />
 
 
 
