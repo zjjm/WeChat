@@ -1,28 +1,6 @@
+//index.js
 const app = getApp()
-
-Page({
-  data: {
-  },
-  /*
-  show() {
-    if(typeof this.getTabBar === 'function' && this.getTabBar()) {
-        this.getTabBar().setDat({
-          activeIndex:1
-        })
-      }
-  },*/
-  onLoad: function (options) {
-    if (app.globalData.openid) {
-      this.setData({
-        openid: app.globalData.openid
-      })
-    }
-
-    console.group('数据库"实时数据推送"文档')
-    console.log('https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/realtime.html')
-    console.groupEnd()
-  },
-})
+ 
 Component({
   pageLifetimes: {
     show() {
@@ -33,5 +11,52 @@ Component({
         })
       }
     }
+  },
+  data: {
+    //搜索框
+    inputShowed: false,
+    inputVal: ""
+  },
+  methods: {
+      /**
+       * 生命周期函数--监听页面加载
+       */
+      onLoad: function() {
+        this.setData({
+          search: this.search.bind(this)
+        })
+      },
+      //搜索
+      search: function (value) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve([{text: '搜索结果', value: 1}, {text: '搜索结果2', value: 2}])
+              }, 200)
+          })
+      },
+      selectResult: function (e) {
+          console.log('select result', e.detail)
+      },
+      /**
+       * 生命周期函数--监听页面初次渲染完成
+       */
+      onReady:function() {
+
+      },
+
+      /**
+       * 生命周期函数--监听页面显示
+       */
+      onShow:function() {
+
+      },
+
+      /**
+       * 生命周期函数--监听页面隐藏
+       */
+      onHide:function() {
+
+      },
+
   }
 })
