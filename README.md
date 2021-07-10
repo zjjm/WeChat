@@ -7,7 +7,7 @@
 
 
 
-<img src="miniprogram\images\markdown\banner.png" alt="banner" style="zoom:75%;" />
+<img src="\miniprogram\images\markdown\banner.png" alt="banner" style="zoom:75%;" />
 
 
 
