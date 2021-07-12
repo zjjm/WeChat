@@ -6,7 +6,7 @@ Component({
     //导航栏
     list: [{
       "text": "越唱吧",
-      "pagePath": "/pages/index/index",
+      "pagePath": "/pages/ycb/ycb",
       "iconPath": "/images/toolbar/tabbar_icon_theatre_default.png",
       "selectedIconPath": "/images/toolbar/tabbar_icon_theatre_active.png",
         dot: true
