@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "mp-dialog": "weui-miniprogram/dialog/dialog",
+    "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
+    "mp-searchbar": "weui-miniprogram/searchbar/searchbar"
+  },
+  "navigationBarTitleText": "乡村振兴"
+}
