@@ -1,35 +1,16 @@
 /**pages/ycb/ycb.wxss**/
+
 page {
-  background: #f6f6f6;
   /*背景渐变*/
   background: -webkit-linear-gradient(top,#C0D3DB,#FFFFFF,#C0D3DB);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 /*背景图片*/
 .bg{
-  margin-top: 40rpx;
+  margin-top: 80rpx;
   position: absolute;
   width: 100%;
   height: 1400rpx;
-}
-
-.flower{
-  margin-top: 300rpx;
-  margin-left: 5%;
-  width: 80rpx;
-  height: 80rpx;
-  position: absolute;
-}
-
-.cloud{
-  margin-top: 600rpx;
-  margin-left: 5%;
-  width: 80rpx;
-  height: 80rpx;
-  position: absolute;
 }
 
 .search{
@@ -37,6 +18,13 @@ page {
   width: 60%;
   margin-top: 100rpx;
   left: 50rpx;
+ }
+
+ /*搜索图标*/
+ .icons{
+  position: absolute;
+  right: 85%;
+  padding-top: 10rpx;
  }
 
  .search input{
@@ -52,13 +40,6 @@ page {
  .phcolor {
   color: #C1D4DA;
 }
-
-/*搜索图标*/
- .icons{
-  position: absolute;
-  right: 85%;
-  padding-top: 10rpx;
- }
 
  .lists{
   text-align: left;
@@ -93,11 +74,40 @@ page {
   margin-top: 40rpx;
 }
 
-/*
-.swiper-item::before{
+.story{
+  margin-top: 150rpx;
+  margin-left: 30%;
+  width: 90rpx;
+  height: 120rpx;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
-*/
+
+.flower{
+  margin-top: 300rpx;
+  margin-left: 5%;
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+}
+
+.title_one{
+  color:#23363D;
+  position: absolute;
+  margin-top: 310rpx;
+  margin-left: 8%;
+}
+
+.cloud{
+  margin-top: 600rpx;
+  margin-left: 5%;
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+}
+
+.title_two{
+  color:#23363D;
+  position: absolute;
+  margin-top: 630rpx;
+  margin-left: 8%;
+}
