@@ -1,0 +1,4 @@
+<view class="page-section-spacing">
+  <scroll-view scroll-y="true" style="height: 3300rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  </scroll-view>
+</view>
