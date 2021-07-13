@@ -1,4 +1,4 @@
-<!--ycb.wxml-->
+<!--pages/ycb/ycb.wxml-->
 
 <!--搜索-->
 <view class="page">
@@ -33,8 +33,9 @@
   </view>
 
   <image class = "flower" src='../../images/background/flower.png'></image>
+  <text style="color:#23363D;position: absolute;margin-top: 310rpx;margin-left: 8%;">越剧体验馆</text>
+
   <image class = "cloud" src='../../images/background/cloud.png'></image>
-
-
+  <text style="color:#23363D;position: absolute;margin-top: 630rpx;margin-left: 8%;">为你推荐</text>
 
 </view>
