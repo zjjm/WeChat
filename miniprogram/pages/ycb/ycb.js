@@ -30,8 +30,8 @@ Component({
     //按钮激活颜色
     indicatorActivecolor:'#C3D7DE',
     indicatorDots: true,
-    vertical: true,
-    autoplay: true,
+    vertical: false,
+    autoplay: false,
     interval: 2000,
     duration: 500
   },
@@ -116,7 +116,8 @@ Component({
       onShow:function() {
         wx.hideTabBar({
             success: function() {
-                app.onTabBar('user');
+              console.log('success')  
+              //app.onTabBar('user');
              }
         })
       },
