@@ -2,40 +2,42 @@
 
 <!--搜索-->
 <view class="page">
-  <!--
-    <view class='nav'>
-    <view class='title_text'>乡村振兴</view>
-    </view>
-  -->
-  <view class="page__bd">
-
-    <image class = "bg" src='../../images/background/ycb_bg.png'></image>
-    
-    <view class='search'>
-      <icon type='search' class='icons' color="#89bcd2"></icon>
-      <input type='text' placeholder='输入关键词' bindinput='input' placeholder-class="phcolor" bindconfirm='confirm'/>
-      <view wx:for="{{list}}" wx:key='' class='lists'>
-        <text wx:if="{{item.show}}">{{item.name}}</text>
+  <scroll-view scroll-y="true" style="height: 3000rpx;">
+    <!--
+      <view class='nav'>
+      <view class='title_text'>乡村振兴</view>
       </view>
+    -->
+    <view class="page__bd">
+
+      <image class = "bg" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/ycb_bg.png'></image>
+      
+      <view class='search'>
+        <icon type='search' class='icons' color="#89bcd2"></icon>
+        <input type='text' placeholder='输入关键词' bindinput='input' placeholder-class="phcolor" bindconfirm='confirm'/>
+        <view wx:for="{{list}}" wx:key='' class='lists'>
+          <text wx:if="{{item.show}}">{{item.name}}</text>
+        </view>
+      </view>
+      
+      <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" 
+          style="height:420rpx;" indicator-color="{{indicatorColor}}" 
+          indicator-active-color="{{indicatorActivecolor}}" circular="true">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+      
     </view>
-    
-    <swiper indicator-dots="{{indicatorDots}}"
-         autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" 
-         style="height:340rpx;" indicator-color="{{indicatorColor}}" 
-         indicator-active-color="{{indicatorActivecolor}}" circular="true">
-      <block wx:for="{{background}}" wx:key="*this">
-        <swiper-item>
-          <view class="swiper-item {{item}}"></view>
-        </swiper-item>
-      </block>
-    </swiper>
-    
-  </view>
 
-  <image class = "flower" src='../../images/background/flower.png'></image>
-  <text style="color:#23363D;position: absolute;margin-top: 310rpx;margin-left: 8%;">越剧体验馆</text>
+    <image class = "flower" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/flower.png'></image>
+    <text style="color:#23363D;position: absolute;margin-top: 310rpx;margin-left: 8%;">越剧体验馆</text>
 
-  <image class = "cloud" src='../../images/background/cloud.png'></image>
-  <text style="color:#23363D;position: absolute;margin-top: 630rpx;margin-left: 8%;">为你推荐</text>
+    <image class = "cloud" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/cloud.png'></image>
+    <text style="color:#23363D;position: absolute;margin-top: 630rpx;margin-left: 8%;">为你推荐</text>
+  </scroll-view>
 
 </view>
