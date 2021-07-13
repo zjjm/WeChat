@@ -5,14 +5,14 @@ page {
 }
 
 .bg{
-  margin-top: 85px;
+  margin-top: 40px;
   position: absolute;
   width: 100%;
-  height: 1200rpx;
+  height: 1400rpx;
 }
 
 .flower{
-  margin-top: 300rpx;
+  margin: 0;
   margin-left: 5%;
   width: 80rpx;
   height: 80rpx;
@@ -20,11 +20,37 @@ page {
 }
 
 .cloud{
-  margin-top: 600rpx;
+  margin: 0;
+  margin-top: 300rpx;
   margin-left: 5%;
   width: 80rpx;
   height: 80rpx;
   position: absolute;
+}
+
+.food{
+  position: inherit;
+  left: 20%;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.shop{
+  position: inherit;
+  left: 30%;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.banner-bg{
+  position: relative;
+  margin: 0;
+  padding-top: 90rpx;
+}
+
+.footer{
+  margin-top: 160rpx;
+  width: 100%;
 }
 
 .search{
@@ -81,9 +107,10 @@ page {
   background-size: contain;
   border-radius: 36rpx;
   width: 660rpx;
-  height: 340rpx;
+  height: 380rpx;
   display: block;
   margin: 0 auto;
+  margin-top: 40rpx;
 }
 
 /*
