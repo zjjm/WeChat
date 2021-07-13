@@ -13,8 +13,8 @@
     
     <view>
       <view class='search'>
-        <input type='text' placeholder='输入关键词' bindinput='input' placeholder-class="phcolor" bindconfirm='confirm'/>
         <icon type='search' class='icons' color="#89bcd2"></icon>
+        <input type='text' placeholder='输入关键词' bindinput='input' placeholder-class="phcolor" bindconfirm='confirm'/>
         <view wx:for="{{list}}" wx:key='' class='lists'>
           <text wx:if="{{item.show}}">{{item.name}}</text>
         </view>
@@ -23,8 +23,9 @@
 
     <view class="img">
         <swiper indicator-dots="{{indicatorDots}}"
-          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:210px;margin-bottom:30px auto;" indicator-color="{{indicatorColor}}" 
-    indicator-active-color="{{indicatorActivecolor}}" circular="true">
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" 
+          style="height:410rpx;" indicator-color="{{indicatorColor}}" 
+          indicator-active-color="{{indicatorActivecolor}}" circular="true">
           <block wx:for="{{background}}" wx:key="*this">
             <swiper-item>
               <view class="swiper-item {{item}}"></view>
