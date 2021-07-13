@@ -16,6 +16,17 @@ Component({
     //搜索框
     inputShowed: false,
     inputVal: "",
+    //轮播
+    background: ['img-1', 'img-2', 'img-3', 'img-4'],
+    //按钮默认颜色
+    indicatorColor:'white',
+    //按钮激活颜色
+    indicatorActivecolor:'#DA8D31',
+    indicatorDots: true,
+    vertical: true,
+    autoplay: true,
+    interval: 2000,
+    duration: 500
   },
   methods: {
       /**
