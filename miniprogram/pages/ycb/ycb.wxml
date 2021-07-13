@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!--ycb.wxml-->
 
 <!--搜索-->
 <view class="page">
@@ -7,24 +7,32 @@
     <view class='title_text'>乡村振兴</view>
     </view>
   -->
-<view class="page__bd">
-
-    <image src='../../images/background/yyw_bg.png'></image>
-    
   <view class="page__bd">
-    <!--<mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>-->
-  </view>
-  
-  <view>
-    <view class='search'>
-      <input type='text' placeholder='输入关键词' bindinput='input' placeholder-class="phcolor" bindconfirm='confirm'/>
-      <icon type='search' class='icons' color="rgb(137,188,210)"></icon>
-      <view wx:for="{{list}}" wx:key='' class='lists'>
-        <text wx:if="{{item.show}}">{{item.name}}</text>
+
+    <image src='../../images/background/ycb_bg.png'></image>
+    
+    <view>
+      <view class='search'>
+        <input type='text' placeholder='输入关键词' bindinput='input' placeholder-class="phcolor" bindconfirm='confirm'/>
+        <icon type='search' class='icons' color="#89bcd2"></icon>
+        <view wx:for="{{list}}" wx:key='' class='lists'>
+          <text wx:if="{{item.show}}">{{item.name}}</text>
+        </view>
       </view>
     </view>
-  </view>
 
-</view>
+    <view class="img">
+        <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:210px;margin-bottom:30px auto;" indicator-color="{{indicatorColor}}" 
+    indicator-active-color="{{indicatorActivecolor}}" circular="true">
+          <block wx:for="{{background}}" wx:key="*this">
+            <swiper-item>
+              <view class="swiper-item {{item}}"></view>
+            </swiper-item>
+          </block>
+        </swiper>
+    </view>
+    
+  </view>
 
 </view>

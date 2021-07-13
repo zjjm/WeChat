@@ -2,17 +2,17 @@
 page {
   background: #f6f6f6;
   /*背景渐变*/
-  background: -webkit-linear-gradient(top,rgb(193,212,219),#FFFFFF,rgb(193,212,219));
+  background: -webkit-linear-gradient(top,#C0D3DB,#FFFFFF,#C0D3DB);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-
+/*背景图片*/
 image{
-  margin-top: 54px;
+  margin-top: 75px;
   position: absolute;
   width: 100%;
-  height: 1000rpx;
+  height: 1200rpx;
 }
 
 .search{
@@ -46,3 +46,84 @@ image{
   margin-top: 20px;
   color: rgb(230, 124, 25);
  }
+
+ /*轮播*/
+ .img-1{
+  background:url(https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/swiper/1.jpg);
+  background-size: contain;
+  border-radius: 18px;
+  width: 330px;
+  height: 170px;
+  margin: 35px auto;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.img-1:before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-2{
+  background:url(https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/swiper/2.jpg);
+  background-size: contain;
+  border-radius: 18px;
+  width: 330px;
+  height: 170px;
+  margin: 35px auto;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.img-2:before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-3{
+  background:url(https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/swiper/3.jpg);
+  background-size: contain;
+  border-radius: 18px;
+  width: 330px;
+  height: 170px;
+  margin: 35px auto;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.img-3:before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-4{
+  background:url(https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/swiper/4.jpg);
+  background-size: contain;
+  border-radius: 18px;
+  width: 330px;
+  height: 170px;
+  margin: 35px auto;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.img-4:before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.swiper-item{
+  display: block;
+}
+
+.img{
+  height: 400px;
+}

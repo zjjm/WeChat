@@ -12,10 +12,28 @@ Component({
       }
     }
   },
+  //轮播图
+  onShareAppMessage() {
+    return {
+      title: 'swiper',
+      path: 'pages/ycb/ycb'
+    }
+  },
   data: {
     //搜索框
     inputShowed: false,
     inputVal: "",
+    //轮播
+    background: ['img-1', 'img-2', 'img-3', 'img-4'],
+    //按钮默认颜色
+    indicatorColor:'white',
+    //按钮激活颜色
+    indicatorActivecolor:'#C3D7DE',
+    indicatorDots: true,
+    vertical: true,
+    autoplay: true,
+    interval: 2000,
+    duration: 500
   },
   methods: {
       /**
