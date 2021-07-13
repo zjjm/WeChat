@@ -4,11 +4,27 @@ page {
   background: -webkit-linear-gradient(top,#ECC6BA,#FFFFFF,#ECC6BA);
 }
 
-image{
+.bg{
   margin-top: 85px;
   position: absolute;
   width: 100%;
   height: 1200rpx;
+}
+
+.flower{
+  margin-top: 300rpx;
+  margin-left: 5%;
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+}
+
+.cloud{
+  margin-top: 600rpx;
+  margin-left: 5%;
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
 }
 
 .search{

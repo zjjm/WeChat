@@ -9,7 +9,7 @@
   -->
   <view class="page__bd">
 
-    <image src='../../images/background/yyw_bg.png'></image>
+    <image class="bg" src='../../images/background/yyw_bg.png'></image>
     
     <view class='search'>
       <icon type='search' class='icons' color="#F0AC9F"></icon>
@@ -31,5 +31,11 @@
     </swiper>
 
   </view>
+
+  <image class = "flower" src='../../images/background/flower.png'></image>
+  <text style="color:#23363D;position: absolute;margin-top: 310rpx;margin-left: 8%;">越食地图</text>
+
+  <image class = "cloud" src='../../images/background/cloud.png'></image>
+  <text style="color:#23363D;position: absolute;margin-top: 630rpx;margin-left: 8%;">为你推荐</text>
 
 </view>
