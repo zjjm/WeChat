@@ -8,8 +8,6 @@
       <view class='title_text'>乡村振兴</view>
       </view>
     -->
-    <view class="page__bd">
-
       <image class = "bg" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/ycb_bg.png'></image>
       
       <view class='search'>
@@ -30,14 +28,12 @@
           </swiper-item>
         </block>
       </swiper>
-      
-    </view>
 
     <image class = "flower" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/flower.png'></image>
-    <text style="color:#23363D;position: absolute;margin-top: 310rpx;margin-left: 8%;">越剧体验馆</text>
+    <text class="title_one">越剧体验馆</text>
 
     <image class = "cloud" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/cloud.png'></image>
-    <text style="color:#23363D;position: absolute;margin-top: 630rpx;margin-left: 8%;">为你推荐</text>
+    <text class="title_two">为你推荐</text>
   </scroll-view>
 
 </view>
