@@ -9,7 +9,7 @@
   -->
   <view class="page__bd">
 
-    <image src='../../images/background/ycb_bg.png'></image>
+    <image class = "bg" src='../../images/background/ycb_bg.png'></image>
     
     <view class='search'>
       <icon type='search' class='icons' color="#89bcd2"></icon>
@@ -31,5 +31,10 @@
     </swiper>
     
   </view>
+
+  <image class = "flower" src='../../images/background/flower.png'></image>
+  <image class = "cloud" src='../../images/background/cloud.png'></image>
+
+
 
 </view>
