@@ -74,12 +74,18 @@ page {
   margin-top: 40rpx;
 }
 
-.story{
-  margin-top: 150rpx;
-  margin-left: 30%;
+.zeroLine{
+  margin-top: 120rpx;
+  margin-left: 190rpx;
   width: 90rpx;
   height: 120rpx;
   position: absolute;
+}
+
+.zeroLine.two{
+  margin-left: 440rpx;
+  width: 130rpx;
+  height: 120rpx;
 }
 
 .flower{
@@ -95,6 +101,27 @@ page {
   position: absolute;
   margin-top: 310rpx;
   margin-left: 8%;
+}
+
+.oneLine{
+  background-color: #FFFFFF;
+  margin-top: 430rpx;
+  margin-left: 100rpx;
+  width: 130rpx;
+  height: 120rpx;
+  /* 圆角弧度 */
+  border-radius: 30%;
+  /* 阴影设置 水平 垂直偏差 模糊距离 阴影尺寸 颜色*/
+  box-shadow: 5rpx 5rpx 20rpx 5rpx #b4d3db;
+  position: absolute;
+}
+
+.oneLine.two{
+  margin-left: 320rpx;
+}
+
+.oneLine.three{
+  margin-left: 540rpx;
 }
 
 .cloud{
