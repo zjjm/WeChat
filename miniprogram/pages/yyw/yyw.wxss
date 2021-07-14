@@ -1,56 +1,16 @@
-/* pages/yyw/yyw.wxss */
+/**pages/ycb/ycb.wxss**/
+
 page {
   /*背景渐变*/
   background: -webkit-linear-gradient(top,#ECC6BA,#FFFFFF,#ECC6BA);
 }
 
+/*背景图片*/
 .bg{
-  margin-top: 40px;
+  margin-top: 80rpx;
   position: absolute;
   width: 100%;
   height: 1400rpx;
-}
-
-.flower{
-  margin: 0;
-  margin-left: 5%;
-  width: 80rpx;
-  height: 80rpx;
-  position: absolute;
-}
-
-.cloud{
-  margin: 0;
-  margin-top: 300rpx;
-  margin-left: 5%;
-  width: 80rpx;
-  height: 80rpx;
-  position: absolute;
-}
-
-.food{
-  position: inherit;
-  left: 20%;
-  width: 200rpx;
-  height: 200rpx;
-}
-
-.shop{
-  position: inherit;
-  left: 30%;
-  width: 200rpx;
-  height: 200rpx;
-}
-
-.banner-bg{
-  position: relative;
-  margin: 0;
-  padding-top: 90rpx;
-}
-
-.footer{
-  margin-top: 160rpx;
-  width: 100%;
 }
 
 .search{
@@ -60,31 +20,32 @@ page {
   left: 50rpx;
  }
 
-.search input{
-  background:white;
-  outline:none;
-  text-align: left;
-  padding-left: 35px;
-  border-radius: 18px;
-  height: 30px;
- }
-
-.phcolor {
-  color: #E7CBC2;
-}
-
-/*搜索图标*/
-.icons{
+ /*搜索图标*/
+ .icons{
   position: absolute;
   right: 85%;
   padding-top: 10rpx;
  }
 
-.lists{
+ .search input{
+  background:white;
+  outline:none;
   text-align: left;
-  margin-top: 20rpx;
-  color: #E67C19;
+  padding-left: 70rpx;
+  border-radius: 36rpx;
+  height: 60rpx;
+ }
+
+ /*搜索框placeholder颜色*/
+ .phcolor {
+  color: #C1D4DA;
 }
+
+ .lists{
+  text-align: left;
+  margin: 20rpx;
+  color: #E67C19;
+ }
 
  /*轮播*/
  .img-1{
@@ -113,11 +74,72 @@ page {
   margin-top: 40rpx;
 }
 
-/*
-.swiper-item::before{
+.zeroLine{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 60rpx;
+  left: 20%;
+  width: 200rpx;
+  height: 200rpx;
 }
-*/
+
+.zeroLine.two{
+  left: 55%;
+}
+
+.flower{
+  margin-top: 300rpx;
+  margin-left: 5%;
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+}
+
+.title_one{
+  color:#23363D;
+  position: absolute;
+  margin-top: 310rpx;
+  margin-left: 8%;
+}
+
+.oneLine{
+  background-color: #FFFFFF;
+  margin-top: 430rpx;
+  margin-left: 100rpx;
+  width: 130rpx;
+  height: 120rpx;
+  /* 圆角弧度 */
+  border-radius: 30%;
+  /* 阴影设置 水平 垂直偏差 模糊距离 阴影尺寸 颜色*/
+  box-shadow: 5rpx 5rpx 20rpx 5rpx #b4d3db;
+  position: absolute;
+}
+
+.oneLine.two{
+  margin-left: 320rpx;
+}
+
+.oneLine.three{
+  margin-left: 540rpx;
+}
+
+.cloud{
+  margin-top: 600rpx;
+  margin-left: 5%;
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+}
+
+.title_two{
+  color:#23363D;
+  position: absolute;
+  margin-top: 630rpx;
+  margin-left: 8%;
+}
+
+.footer{
+  position: relative; 
+  left: 0rpx; 
+  top: 550rpx;
+  width: 100%;
+}
