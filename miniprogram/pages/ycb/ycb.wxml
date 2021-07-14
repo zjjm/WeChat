@@ -28,6 +28,7 @@
           </swiper-item>
         </block>
       </swiper>
+      
     <image class="zeroLine" src='../../images/toolbar/tabbar_icon_setting_active.png'></image>
     <image class="zeroLine two" src='../../images/toolbar/tabbar_icon_setting_active.png'></image>
 
