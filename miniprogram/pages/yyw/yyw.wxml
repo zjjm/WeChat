@@ -8,9 +8,8 @@
       <view class='title_text'>乡村振兴</view>
       </view>
     -->
-    <view class="page__bd">
 
-      <image class="bg" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/yyw_bg.png'></image>
+      <image class="bg" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/yyw_bg.png' style="width: 750rpx; height: 452rpx; display: block; box-sizing: content-box; left: 0rpx; top: 100rpx"></image>
       
       <view class='search'>
         <icon type='search' class='icons' color="#F0AC9F"></icon>
@@ -31,18 +30,17 @@
         </block>
       </swiper>
 
-    </view>
-
-    <view class = "banner-bg">
-      <image class="food" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/yyw_banner_bg_food.png'></image>
-      <image class="shop" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/yyw_banner_bg_shop.png'></image>
-    </view>
+    <image class="zeroLine" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/yyw_banner_bg_food.png'></image>
+    <image class="zeroLine two" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/yyw_banner_bg_shop.png'></image>
 
     <image class = "flower" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/flower.png'></image>
-    <text style="color:#23363D;position: absolute;margin-top: 10rpx;margin-left: 8%;">越食地图</text>
+    <text class="title_one">越食地图</text>
+    <image class="oneLine" src='../../images/toolbar/tabbar_icon_setting_active.png'></image>
+    <image class="oneLine two" src='../../images/toolbar/tabbar_icon_setting_active.png'></image>
+    <image class="oneLine three" src='../../images/toolbar/tabbar_icon_setting_active.png'></image>
 
     <image class = "cloud" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/cloud.png'></image>
-    <text style="color:#23363D;position: absolute;margin-top: 330rpx;margin-left: 8%;">为你推荐</text>
+    <text class="title_two">为你推荐</text>
 
     <image class = "footer" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/yyw_footer_bg.png'></image>
   </scroll-view>
