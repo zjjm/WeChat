@@ -29,8 +29,14 @@
         </block>
       </swiper>
 
+    <image class="story" src='../../images/toolbar/tabbar_icon_setting_active.png'></image>
+    <image class="song" src='../../images/toolbar/tabbar_icon_setting_active.png'></image>
+
     <image class = "flower" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/flower.png'></image>
     <text class="title_one">越剧体验馆</text>
+    <image class="oneLine" src='../../images/toolbar/tabbar_icon_setting_active.png'></image>
+    <image class="oneLine two" src='../../images/toolbar/tabbar_icon_setting_active.png'></image>
+    <image class="oneLine three" src='../../images/toolbar/tabbar_icon_setting_active.png'></image>
 
     <image class = "cloud" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/cloud.png'></image>
     <text class="title_two">为你推荐</text>
