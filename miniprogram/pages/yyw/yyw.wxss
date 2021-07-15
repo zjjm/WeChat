@@ -74,18 +74,6 @@ page {
   margin-top: 40rpx;
 }
 
-.zeroLine{
-  position: absolute;
-  margin-top: 60rpx;
-  left: 20%;
-  width: 200rpx;
-  height: 200rpx;
-}
-
-.zeroLine.two{
-  left: 55%;
-}
-
 .flower{
   margin-top: 300rpx;
   margin-left: 5%;
@@ -94,11 +82,42 @@ page {
   position: absolute;
 }
 
+.cloud{
+  margin-top: 600rpx;
+  left: 5%;
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+}
+
+.map{
+  position: relative;
+  margin-top: 370rpx;
+  margin-left: 10%;
+  width: 80%;
+  height: 280rpx;
+}
+
+.footer{
+  position: relative;
+  left: 10%;
+  height: 9%;
+  width: 80%;
+  margin-top: -10%;
+}
+
 .title_one{
   color:#23363D;
   position: absolute;
   margin-top: 310rpx;
   margin-left: 8%;
+}
+
+.title_two{
+  color:#23363D;
+  position: absolute;
+  margin-top: 630rpx;
+  left: 8%;
 }
 
 .oneLine{
@@ -122,24 +141,14 @@ page {
   margin-left: 540rpx;
 }
 
-.cloud{
-  margin-top: 600rpx;
-  margin-left: 5%;
-  width: 80rpx;
-  height: 80rpx;
+.zeroLine{
   position: absolute;
+  margin-top: 60rpx;
+  left: 20%;
+  width: 200rpx;
+  height: 200rpx;
 }
 
-.title_two{
-  color:#23363D;
-  position: absolute;
-  margin-top: 630rpx;
-  margin-left: 8%;
-}
-
-.footer{
-  position: relative; 
-  left: 0rpx; 
-  top: 550rpx;
-  width: 100%;
+.zeroLine.two{
+  left: 55%;
 }

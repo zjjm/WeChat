@@ -9,7 +9,7 @@
       </view>
     -->
 
-      <image class="bg" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/yyw_bg.png' style="width: 750rpx; height: 452rpx; display: block; box-sizing: content-box; left: 0rpx; top: 100rpx"></image>
+      <image class="bg" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/yyw_bg.png'></image>
       
       <view class='search'>
         <icon type='search' class='icons' color="#F0AC9F"></icon>
@@ -35,14 +35,15 @@
 
     <image class = "flower" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/flower.png'></image>
     <text class="title_one">越食地图</text>
-    <image class="oneLine" src='../../images/toolbar/tabbar_icon_setting_active.png'></image>
-    <image class="oneLine two" src='../../images/toolbar/tabbar_icon_setting_active.png'></image>
-    <image class="oneLine three" src='../../images/toolbar/tabbar_icon_setting_active.png'></image>
+
+    <image class="map" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/yyw_map_bg.png'></image>
 
     <image class = "cloud" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/cloud.png'></image>
     <text class="title_two">为你推荐</text>
 
+    <!--为你推荐bg-->
     <image class = "footer" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/yyw_footer_bg.png'></image>
+    <image src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/yyw_footer_img.png' style="position:relative;left:5%;height:10%;width:90%;margin-top:-17%;"></image>
   </scroll-view>
 
 </view>
