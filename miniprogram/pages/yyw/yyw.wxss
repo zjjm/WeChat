@@ -39,6 +39,7 @@ page {
  /*搜索框placeholder颜色*/
  .phcolor {
   color: #C1D4DA;
+  font-family: 方正北魏楷书简体;
 }
 
  .lists{
@@ -111,6 +112,7 @@ page {
   position: absolute;
   margin-top: 310rpx;
   margin-left: 8%;
+  font-family: 方正北魏楷书简体;
 }
 
 .title_two{
@@ -118,6 +120,7 @@ page {
   position: absolute;
   margin-top: 630rpx;
   left: 8%;
+  font-family: 方正北魏楷书简体;
 }
 
 .oneLine{
