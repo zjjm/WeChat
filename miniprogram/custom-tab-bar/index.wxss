@@ -3,14 +3,17 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 48px;
+  height: 70px;
   background: white;
   display: flex;
   padding-bottom: env(safe-area-inset-bottom);
+  /* 圆角弧度 */
+  border-radius: 15% 15% 0 0;
+  /* 阴影设置 水平 垂直偏差 模糊距离 阴影尺寸 颜色*/
+  box-shadow: 5rpx 5rpx 30rpx 15rpx #BCE0D9;
 }
 
 .tab-bar-border {
-  background-color: rgba(0, 0, 0, 0.33);
   position: absolute;
   left: 0;
   top: 0;
@@ -29,8 +32,8 @@
 }
 
 .tab-bar-item cover-image {
-  width: 27px;
-  height: 27px;
+  width: 45px;
+  height: 50px;
 }
 
 .tab-bar-item cover-view {
