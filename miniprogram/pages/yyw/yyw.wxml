@@ -14,7 +14,7 @@
       <view class='search'>
         <icon type='search' class='icons' color="#F0AC9F"></icon>
         <input type='text' placeholder='输入关键词' bindinput='input' placeholder-class="phcolor" bindconfirm='confirm'/>
-        <view wx:for="{{list}}" wx:key='' class='lists'>
+        <view wx:for="{{list}}" wx:key='id' class='lists'>
           <text wx:if="{{item.show}}">{{item.name}}</text>
         </view>
       </view>

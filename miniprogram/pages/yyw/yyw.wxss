@@ -16,7 +16,7 @@ page {
 .search{
   position: relative;
   width: 60%;
-  margin-top: 100rpx;
+  margin-top: 11%;
   left: 50rpx;
  }
 
@@ -39,7 +39,7 @@ page {
  /*搜索框placeholder颜色*/
  .phcolor {
   color: #C1D4DA;
-  font-family: 方正北魏楷书简体;
+  font-family: 方正字迹-海体正楷 简;
 }
 
  .lists{
@@ -112,7 +112,7 @@ page {
   position: absolute;
   margin-top: 310rpx;
   margin-left: 8%;
-  font-family: 方正北魏楷书简体;
+  font-family: 方正字迹-海体正楷 简;
 }
 
 .title_two{
@@ -120,7 +120,7 @@ page {
   position: absolute;
   margin-top: 630rpx;
   left: 8%;
-  font-family: 方正北魏楷书简体;
+  font-family: 方正字迹-海体正楷 简;
 }
 
 .oneLine{

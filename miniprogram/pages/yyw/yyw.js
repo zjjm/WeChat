@@ -109,7 +109,8 @@ Component({
       onShow:function() {
         wx.hideTabBar({
             success: function() {
-                app.onTabBar('user');
+                console('success');
+                //app.onTabBar('user');
              }
         })
       },
