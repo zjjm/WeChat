@@ -18,20 +18,20 @@
       {
         "text": "越唱吧",
         "pagePath": "pages/ycb/ycb",
-        "iconPath": "/images/toolbar/tabbar_icon_theatre_default.png",
-        "selectedIconPath": "/images/toolbar/tabbar_icon_theatre_active.png"
+        "iconPath": "/images/tabbar/tabbar_icon_theatre_default.png",
+        "selectedIconPath": "/images/tabbar/tabbar_icon_theatre_active.png"
       },
       {
         "text": "越有味",
         "pagePath": "pages/yyw/yyw",
-        "iconPath": "/images/toolbar/tabbar_icon_food_default.png",
-        "selectedIconPath": "/images/toolbar/tabbar_icon_food_active.png"
+        "iconPath": "/images/tabbar/tabbar_icon_food_default.png",
+        "selectedIconPath": "/images/tabbar/tabbar_icon_food_active.png"
       },
       {
         "text": "设置",
         "pagePath": "pages/openapi/openapi",
-        "iconPath": "/images/toolbar/tabbar_icon_setting_default.png",
-        "selectedIconPath": "/images/toolbar/tabbar_icon_setting_active.png"
+        "iconPath": "/images/tabbar/tabbar_icon_setting_default.png",
+        "selectedIconPath": "/images/tabbar/tabbar_icon_setting_active.png"
       }
     ]
   },
