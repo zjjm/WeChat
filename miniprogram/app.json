@@ -2,14 +2,15 @@
   "pages": [
     "pages/ycb/ycb",
     "pages/yyw/yyw",
-    "pages/openapi/openapi"
+    "pages/openapi/openapi",
+    "pages/zxxc/zxxc"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
-    "navigationStyle": "custom",
+    "navigationBarTitleText": "乡村振兴",
+    "navigationStyle": "default",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -28,7 +29,7 @@
         "selectedIconPath": "/images/tabbar/tabbar_icon_food_active.png"
       },
       {
-        "text": "设置",
+        "text": "我的",
         "pagePath": "pages/openapi/openapi",
         "iconPath": "/images/tabbar/tabbar_icon_setting_default.png",
         "selectedIconPath": "/images/tabbar/tabbar_icon_setting_active.png"
