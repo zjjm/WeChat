@@ -100,6 +100,14 @@ Component({
        * 生命周期函数--监听页面初次渲染完成
        */
       onReady:function() {
+        wx.setNavigationBarColor({
+            frontColor: '#000000',
+            backgroundColor: '#ECC6BA',
+            animation: {
+              duration: 200,
+              timingFunc: 'easeIn'
+            }
+          })
 
       },
 

@@ -103,11 +103,19 @@ Component({
             },
         })
     },
+    
       /**
        * 生命周期函数--监听页面初次渲染完成
        */
       onReady:function() {
-
+        wx.setNavigationBarColor({
+          frontColor: '#000000',
+          backgroundColor: '#C0D3DB',
+          animation: {
+            duration: 200,
+            timingFunc: 'easeIn'
+          }
+        })
       },
 
       /**
