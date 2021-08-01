@@ -1,52 +1,16 @@
 /**pages/ycb/ycb.wxss**/
+@import '../../lib/UI.wxss';
 
-page {
+.page {
   /*背景渐变*/
-  background: -webkit-linear-gradient(top,#ECC6BA,#FFFFFF,#ECC6BA);
+  background: -webkit-linear-gradient(top,#ECC6BA,#FFFFFF,#FBF3F1,#ECC6BA);
 }
-
-/*背景图片*/
-.bg{
-  margin-top: 80rpx;
-  position: absolute;
-  width: 100%;
-  height: 1400rpx;
-}
-
-.search{
-  position: relative;
-  width: 60%;
-  margin-top: 11%;
-  left: 50rpx;
- }
-
- /*搜索图标*/
- .icons{
-  position: absolute;
-  right: 85%;
-  padding-top: 10rpx;
- }
-
- .search input{
-  background:white;
-  outline:none;
-  text-align: left;
-  padding-left: 70rpx;
-  border-radius: 36rpx;
-  height: 60rpx;
- }
 
  /*搜索框placeholder颜色*/
  .phcolor {
-  color: #C1D4DA;
+  color: #E7CCC1;
   font-family: 方正字迹-海体正楷 简;
 }
-
- .lists{
-  text-align: left;
-  margin: 20rpx;
-  color: #E67C19;
- }
 
  /*轮播*/
  .img-1{
@@ -75,16 +39,7 @@ page {
   margin-top: 40rpx;
 }
 
-.flower{
-  margin-top: 300rpx;
-  margin-left: 5%;
-  width: 80rpx;
-  height: 80rpx;
-  position: absolute;
-}
-
 .cloud{
-  margin-top: 600rpx;
   left: 5%;
   width: 80rpx;
   height: 80rpx;
@@ -94,9 +49,9 @@ page {
 .map{
   position: relative;
   margin-top: 370rpx;
-  margin-left: 10%;
-  width: 80%;
-  height: 280rpx;
+  margin-left: 12%;
+  width: 74%;
+  height: 230rpx;
 }
 
 .footer{
@@ -104,23 +59,14 @@ page {
   left: 10%;
   height: 9%;
   width: 80%;
-  margin-top: -10%;
-}
-
-.title_one{
-  color:#23363D;
-  position: absolute;
-  margin-top: 310rpx;
-  margin-left: 8%;
-  font-family: 方正字迹-海体正楷 简;
+  margin-top: -4%;
 }
 
 .title_two{
   color:#23363D;
   position: absolute;
-  margin-top: 630rpx;
+  margin-top: 25rpx;
   left: 8%;
-  font-family: 方正字迹-海体正楷 简;
 }
 
 .oneLine{
