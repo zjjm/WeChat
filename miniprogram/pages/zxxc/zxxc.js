@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    tips: '请稍后',
+    show: true,
+    animated: true
   },
 
   /**
@@ -19,7 +21,12 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    this.timer = setInterval(() => {
+      this.setData({
+        show: false
+      })
+    }, 2000)
+    
   },
 
   /**
@@ -40,7 +47,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    clearInterval(this.timer)
   },
 
   /**

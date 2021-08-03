@@ -1,1 +1,7 @@
 /* miniprogram/pages/ycb/zxxc/zxxc.wxss */
+@import '../../lib/UI.wxss';
+
+.page {
+  /*背景渐变*/
+  background: -webkit-repeating-linear-gradient(top,#FFFFFF,#8FC0D4);
+}
