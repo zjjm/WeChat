@@ -1,6 +1,44 @@
 <!--index.wxml-->
 <view class="container">
 
+  <!-- 用户 openid -->
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}" class="userinfo-opendata">
+      <view class="userinfo-block-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button 
+        wx:if="{{canIUseGetUserProfile}}" 
+        bindtap="getUserProfile"
+        class="userinfo-avatar"
+        style="background-image: url({{avatarUrl}})"
+        size="default"
+      ></button>
+      <button
+        wx:else
+        open-type="getUserInfo" 
+        bindgetuserinfo="onGetUserInfo"
+        class="userinfo-avatar"
+        style="background-image: url({{avatarUrl}})"
+        size="default"
+      ></button>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-block-avatar" src="{{avatarUrl}}" mode="cover"></image>
+    </block>
+    <view class="userinfo-nickname-wrapper">
+      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+    </view>
+    <mp-dialog title="乡村振兴" show="{{showSuccessDialog}}" bindbuttontap="SuccessDialog" buttons="{{oneButton}}">
+        <view>获取成功</view>
+    </mp-dialog>
+    <mp-dialog title="乡村振兴" show="{{showFailDialog}}" bindbuttontap="FailDialog" buttons="{{oneButton}}">
+        <view>获取失败</view>
+    </mp-dialog>
+  </view>
+
   <view class="uploader">
     <navigator url="./serverapi/serverapi" open-type="navigate" class="uploader-text">
       <text>服务端调用</text>
