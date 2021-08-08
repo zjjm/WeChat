@@ -1,0 +1,44 @@
+<!--pages/ycb/ycb.wxml-->
+
+<!--搜索-->
+<view class="page">
+  <scroll-view scroll-y="true" style="height: 1450rpx;">
+
+    <navigator url="../zxxc/zxxc" open-type="navigate">
+    <image class="mine" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/yjgs/back_icon.png'></image>
+    </navigator>
+      
+      <view class='search'>
+        <icon type='search' class='icons' color="#89bcd2"></icon>
+        <input type='text' placeholder='输入关键词' bindinput='input' placeholder-class="phcolor" bindconfirm='confirm'/>
+        <view wx:for="{{list}}" wx:key='index' class='lists'>
+          <text wx:if="{{item.show}}">{{item.name}}</text>
+        </view>
+      </view>
+    <image class="menu" src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/yjgs/hamburger_icon.png"></image>
+    
+    <view class="bg">
+    <swiper
+           interval="{{interval}}" duration="{{duration}}" 
+          style="height:1100rpx;" indicator-color="{{indicatorColor}}" 
+          indicator-active-color="{{indicatorActivecolor}}" circular="true">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <image class="arrow left" src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/yjgs/left.png"></image>
+    <image class="arrow right" src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/yjgs/right.png"></image>
+
+    <view class="bg one">
+      <image class="oneLine" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/yjgs/baishezhuan_icon_youzi.png'></image>
+      <image class="oneLine two" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/yjgs/xixiangji_icon_youzi.png'></image>
+      <image class="oneLine three" src='https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/yjgs/honglou_icon_youzi.png'></image>
+    </view>
+
+  </scroll-view>
+
+</view>
