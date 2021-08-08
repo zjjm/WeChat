@@ -3,7 +3,8 @@
     "pages/ycb/ycb",
     "pages/yyw/yyw",
     "pages/openapi/openapi",
-    "pages/zxxc/zxxc"
+    "pages/zxxc/zxxc",
+    "pages/yy/yy"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
