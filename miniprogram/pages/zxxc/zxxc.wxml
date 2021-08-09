@@ -9,13 +9,51 @@
          <mp-loading type="circle" tips="{{tips}}"></mp-loading> -->
         <mp-loading type="circle" show="{{show}}" tips="{{tips}}"></mp-loading>
     </view>
-    <view class="page-wrapper ">
-      <view class="qumu-list">
-        
-
-        
-      
+    <view class="page-wrapper">
+      <!--搜索框-->
+      <view class='search'>
+        <icon type='search' class='icons' color="#FFFFFF"></icon>
+        <input type='text' placeholder='请输入关键词搜索' bindinput='input' bindfocus='' placeholder-class="phcolor" bindconfirm='confirm'/>
+        <view wx:for="{{list}}" wx:key='id' class='lists'>
+          <text wx:if="{{item.show}}">{{item.name}}</text>
+        </view>
+        <image src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/favorites.png" style="width: 60rpx; height: 60rpx; position: absolute; left: 650rpx; top: 0rpx"></image>
       </view>
+      
+      <!--曲目列表-->
+      <view class="qumu-list">
+        <a href="#">推荐曲目</a>
+        <a href="#">排行榜</a>
+        <a href="#">我的喜欢</a>
+      </view>
+
+      <!--曲目信息-->
+      <block wx:for="{{qumu}}" wx:key="index">
+        <view class="qumu-div" style="position: relative; left: 2rpx; top: 0rpx">
+          <image class="qumu-avatar" src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/user-avatar.png"></image>
+          <view class="qumu-name">王小明</view>
+          <view class="qumu-title">{{item}}</view>
+          <image class="qumu-img" src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/lsbyzyt.png"></image>
+          <text class="qumu-players">132</text>
+          <image class="qumu-player" src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/player.png"></image>
+          <image class="qumu-like" src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/like.png"></image>
+          <image class="qumu-commit" src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/commit.png"></image>
+        </view>
+      </block>
+
+      <block wx:for="{{qumu}}" wx:key="index">
+        <view class="qumu-div" style="position: relative; left: 2rpx; top: 0rpx">
+          <image class="qumu-avatar" src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/user-avatar.png"></image>
+          <view class="qumu-name">王小明</view>
+          <view class="qumu-title" style="">{{item}}</view>
+          <image class="qumu-img" src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/lsbyzyt.png"></image>
+          <text class="qumu-players" style="">132</text>
+          <image class="qumu-player" src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/player.png" style=""></image>
+          <image class="qumu-like" src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/like.png"></image>
+          <image class="qumu-commit" src="https://music-0gtd2khj7f8707a2-1257133085.tcloudbaseapp.com/images/background/commit.png"></image>
+        </view>
+      </block>
+
     </view>
 
 

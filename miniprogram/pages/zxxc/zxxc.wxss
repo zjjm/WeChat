@@ -5,3 +5,78 @@
   /*背景渐变*/
   background: -webkit-repeating-linear-gradient(top,#FFFFFF,#8FC0D4);
 }
+
+ /*搜索框placeholder颜色*/
+ .phcolor {
+  color: #FFFFFF;
+  font-family: 方正字迹-海体正楷 简;
+}
+
+ /*搜索图标*/
+ .icons{
+  right: 13%;
+}
+
+.search{
+  width: 68%;
+}
+
+.search input{
+  padding-left: 120rpx;
+  background-color: #C3D7DE;
+}
+
+.qumu-list{
+  position: relative;
+  display: flex;
+  user-select: none;
+  width: 90%;
+  height: 100rpx;
+  border-radius: 30rpx;
+  margin: 40rpx;
+  background-color: #8ABDD2;
+}
+.qumu-list a{
+  text-align:center; 
+  padding: 28rpx;
+  margin-left:45rpx; 
+}
+
+.qumu-list a:hover{
+  color: #C62865;
+}
+
+.qumu-div{
+  position:relative; margin: 40rpx; width: 90%; height: 20vh; background-color: #EEFDFF; border-radius: 30rpx;
+}
+
+.qumu-img{
+  position: relative; width: 214rpx; height: 144rpx; left: 138rpx; top: -108rpx;
+}
+
+.qumu-player{
+  position: relative; left: 145rpx; top: -158rpx; width: 24rpx; height: 24rpx; display: inline-block; box-sizing: border-box;
+}
+
+.qumu-players{
+  position: relative; left: 228rpx; top: -161rpx; color: #959494
+}
+
+.qumu-name{
+  position: relative; width: 104rpx; height: 50rpx; display: block; box-sizing: border-box; left: 150rpx; top: -68rpx;
+}
+
+.qumu-avatar{
+  position: relative; width: 72rpx; height: 72rpx; left: 36rpx; top: 18rpx;
+}
+
+.qumu-title{
+  position: relative; left: 360rpx; top: -58rpx; height: 50rpx; display: block; box-sizing: border-box;
+}
+
+.qumu-like{
+  width: 70rpx; height: 28rpx; position: relative; left: -150rpx; top: -60rpx
+}
+.qumu-commit{
+  width: 60rpx; height: 32rpx; position: relative; left: -80rpx; top: -60rpx
+}
