@@ -41,6 +41,12 @@
 
   <view class="uploader">
     <navigator url="./serverapi/serverapi" open-type="navigate" class="uploader-text">
+      <text>访客预约</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="./serverapi/serverapi" open-type="navigate" class="uploader-text">
       <text>服务端调用</text>
     </navigator>
   </view>

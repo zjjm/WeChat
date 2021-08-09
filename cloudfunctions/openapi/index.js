@@ -30,6 +30,7 @@ exports.main = async (event, context) => {
 async function requestSubscribeMessage(event) {
   // 此处为模板 ID，开发者需要到小程序管理后台 - 订阅消息 - 公共模板库中添加模板，
   // 然后在我的模板中找到对应模板的 ID，填入此处
+  //return 'J6taLg0rPK2YhHEARzTkX9hrypmqNkF_Z46GAmdeV1A'
   return 'lqy1luzf_E9Y9uz0Y3lzjCdo8g0JvCMSyOYtat96ho0' // 如 'N_J6F05_bjhqd6zh2h1LHJ9TAv9IpkCiAJEpSw0PrmQ'
 }
 
@@ -46,7 +47,7 @@ async function sendSubscribeMessage(event) {
     // 此处字段应修改为所申请模板所要求的字段
     data: {
       date3: {
-        value: '2021/6/23',
+        value: '2021年-8月-9日',
       },
       thing4: {
         value: '开会',
